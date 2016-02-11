@@ -1,4 +1,4 @@
-/// <vs SolutionOpened='build,build:dev,watch' />
+/// <vs SolutionOpened='watch' />
 
 var requireDir = require('require-dir');
 
