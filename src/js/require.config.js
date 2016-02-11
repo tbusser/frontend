@@ -21,14 +21,14 @@ define([], function requireConfig() {
             /**
              * Modules
              */
-
+            'init':             'modules/init',
 
             /**
              * Utilities
              */
-            'global-var':               'utils/global-var',
-            'object-array-util':       'utils/object-array',
-            'breakpoints-util':         'utils/breakpoints'
+            'global-var':       'utils/global-var',
+            'object-array-util':'utils/object-array',
+            'breakpoints-util': 'utils/breakpoints'
 
 },
         shim: { // Shim configurations
