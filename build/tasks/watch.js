@@ -96,6 +96,6 @@ function runWatch() {
 
 
 gulp.task(
-    'watch', ['build','build:dev'],
+    'watch',
     runWatch
 );
