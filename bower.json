@@ -12,7 +12,6 @@
     "inuit-box-sizing": "latest",
     "inuit-normalize": "latest",
     "inuit-page": "latest",
-    "inuit-headings-trumps": "latest",
     "inuit-spacing": "latest",
     "inuit-spacing-responsive": "latest",
     "inuit-responsive-tools": "latest",
@@ -32,7 +31,7 @@
     "inuit-print": "latest",
     "jquery": "latest",
     "velocity": "latest",
-    "almond": "0.3.1"
+    "almond": "latest"
   },
   "dependencies": {
   }
