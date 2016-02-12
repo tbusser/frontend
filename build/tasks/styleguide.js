@@ -10,9 +10,24 @@ var gulp = require('gulp'),
 /**
  * Copy functions 
  */
-function copyFiles(src,dest) {
-    return gulp.src(global.getDest(src) + watchAll)
-        .pipe(gulp.dest(styleguidePathSrc + '/' + dest));
+function copyJs() {
+    return gulp.src(global.getDest('js') + watchAll)
+        .pipe(gulp.dest(styleguidePathSrc + '/js'));
+}
+
+function copyCss() {
+    return gulp.src(global.getDest('scss') + watchAll)
+        .pipe(gulp.dest(styleguidePathSrc + '/css'));
+}
+
+function copyFonts() {
+    return gulp.src(global.getDest('font') + watchAll)
+        .pipe(gulp.dest(styleguidePathSrc + '/fonts'));
+}
+
+function copyImg() {
+    return gulp.src(global.getDest('img') + watchAll)
+        .pipe(gulp.dest(styleguidePathSrc + '/images'));
 }
 
 
@@ -28,10 +43,10 @@ function watchDistFolder(folder, func) {
 }
 
 function watchDistFiles() {
-    watchDistFolder('js', copyFiles('js','js'));
-    watchDistFolder('scss', copyFiles('scss', 'css'));
-    watchDistFolder('font', copyFiles('font', 'fonts'));
-    watchDistFolder('img', copyFiles('img', 'images'));
+    watchDistFolder('js', copyJs);
+    watchDistFolder('scss', copyCss);
+    watchDistFolder('font', copyFonts);
+    watchDistFolder('img', copyImg);
 }
 
 
@@ -39,10 +54,10 @@ function watchDistFiles() {
  * Copy all generated files in dist folder to styleguide
  */
 function copyDistFiles() {
-    copyFiles('js', 'js');
-    copyFiles('scss', 'css');
-    copyFiles('font', 'fonts');
-    copyFiles('img', 'images');
+    copyJs();
+    copyCss();
+    copyFonts();
+    copyImg();
 }
 
 
