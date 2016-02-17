@@ -12,6 +12,8 @@
     "gulp-autoprefixer": "latest",
     "gulp-combine-mq": "latest",
     "gulp-cssnano": "latest",
+    "gulp-iconfont": "https://registry.npmjs.org/gulp-iconfont/-/gulp-iconfont-5.0.1.tgz",
+    "gulp-iconfont-css": "2.0.0",
     "gulp-postcss": "latest",
     "gulp-rename": "latest",
     "gulp-sass": "latest",
