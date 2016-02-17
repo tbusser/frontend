@@ -36,7 +36,7 @@ var gulp = require('gulp'),
             .pipe(gulp.dest(dest));
        
         gulp
-         .src(dest + '/**/*.{woff,ttf}')
+         .src(dest + '/**/*.{woff,woff2,ttf}')
             .pipe(gulp.dest(src)); // copy generated files to src folder (SVG/TTF/EOT/WOFF/WOFF2)
 }
 
