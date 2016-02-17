@@ -24,6 +24,6 @@ Font files (woff, ttf, etc.)
 Include file: '_generated.icons.scss' > included in '/src/scss/styles.scss' under 02-tools and Mixin is called under 07-trumps.
 
 
-Notes:
+###Notes
 Finetuning of settings can be done in '/build/tasks/iconfont.js' task.
 
