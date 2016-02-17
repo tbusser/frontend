@@ -36,6 +36,7 @@
 @import "../vendor/inuit-responsive-tools/tools.responsive"; 
 // custom partials
 @import "02-tools/container-setup";
+@import "../icons/_generated.icons";
 
 
 /* 03 - GENERIC */
@@ -88,3 +89,4 @@
 @import "07-trumps/colors";
 @import "07-trumps/text";
 @import "07-trumps/visibility";
+@import "07-trumps/icons";
