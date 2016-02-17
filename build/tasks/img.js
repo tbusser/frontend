@@ -32,4 +32,4 @@ function runImg(cb) {
         .pipe(gulp.dest(dest));
 }
 
-gulp.task('img', runImg);
+gulp.task('img', ['clean:img'] runImg);

@@ -13,4 +13,4 @@
          );
  }
 
- gulp.task('font', runFont);
+ gulp.task('font', ['clean:font'], runFont);

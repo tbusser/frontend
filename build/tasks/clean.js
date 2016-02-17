@@ -46,6 +46,17 @@ function runCleanFont(cb) {
 
 gulp.task('clean:font', runCleanFont);
 
+
+/**
+ * Clean up the font destination folder
+ */
+function runCleanFont(cb) {
+    del(global.getDest('font'), cb);
+}
+
+gulp.task('clean:iconfont', runCleanFont);
+
+
 /**
  * Clean up the html files in the root
  */
@@ -63,13 +74,4 @@ function runCleanStyleguide(cb) {
 }
 
 gulp.task('clean:styleguide', runCleanStyleguide);
-
-/**
- * Clean up the Data destination folder
- */
-function runCleanData(cb) {
-    del(global.getDest('data'), cb);
-}
-
-gulp.task('clean:data', runCleanData);
 

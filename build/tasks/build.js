@@ -2,16 +2,17 @@ var gulp = require('gulp');
 
 gulp.task('build',
 	[
-        'scss:min',
-	'js:min',
-	'font',
-	'img',
+        'scss',
+	    'js',
+	    'font',
+	    'img',
+        'iconfont:copy'
 	]
 );
 
 gulp.task('build:dev',
 	[
         'scss:dev',
-	'js:dev'
+		'js:dev'
 	]
 );

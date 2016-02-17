@@ -52,4 +52,4 @@ gulp.task('js', ['js:dev', 'js:min']);
 
 gulp.task('js:dev', runJSBuild);
 
-gulp.task('js:min', runMinJSBuild);
+gulp.task('js:min', ['js:dev'], runMinJSBuild);
