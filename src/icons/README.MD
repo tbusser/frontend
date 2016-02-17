@@ -18,7 +18,7 @@ For copying files to dist folder. This is started by the build process.
 gulp iconfont:copy
 ```
 
-###Generated items (gulp iconfont command)
+###Generated items (after: gulp iconfont)
 Font files (woff, ttf, etc.)
 Include file: '_generated.icons.scss' > included in '/src/scss/styles.scss' under 02-tools and Mixin is called under 07-trumps.
 
