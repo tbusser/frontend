@@ -9,6 +9,12 @@ var gulp = require('gulp'),
     generatedScssInclude = '_generated.icons.scss', // include sccs file with generated icon classes (relative path!!)
     dest = global.getDest('icons'); // destination file to place fonts
 
+
+var settings = {
+    copyFontFiles: '/**/*.{woff,woff2,ttf}',
+    generateFormats: ['woff', 'woff2', 'ttf']
+}
+
 /**
  * Copies font from the source to the destination folder
  */
@@ -28,7 +34,7 @@ var gulp = require('gulp'),
             .pipe(
                 iconfont({
                     fontName: iconfontName,
-                    formats: ['woff', 'woff2', 'ttf'],
+                    formats: settings.generateFormats,
                     timestamp: runTimestamp,
                     normalize: true
                 })
@@ -36,7 +42,7 @@ var gulp = require('gulp'),
             .pipe(gulp.dest(dest));
        
         gulp
-         .src(dest + '/**/*.{woff,woff2,ttf}')
+         .src(dest + settings.copyFontFiles)
             .pipe(gulp.dest(src)); // copy generated files to src folder (SVG/TTF/EOT/WOFF/WOFF2)
 }
 
@@ -47,7 +53,7 @@ var gulp = require('gulp'),
  */
  function copyIconFont() {
      return gulp
-         .src(src + '/**/*')
+         .src(src + settings.copyFontFiles)
          .pipe(
              gulp.dest(dest)
          );
