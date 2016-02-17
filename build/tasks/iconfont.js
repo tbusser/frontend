@@ -28,7 +28,7 @@ var gulp = require('gulp'),
             .pipe(
                 iconfont({
                     fontName: iconfontName,
-                    formats: ['woff', 'woff2' 'ttf'],
+                    formats: ['woff', 'woff2', 'ttf'],
                     timestamp: runTimestamp,
                     normalize: true
                 })
