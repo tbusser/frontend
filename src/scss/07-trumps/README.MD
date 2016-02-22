@@ -1,11 +1,5 @@
-TRUMPS
+# Trumps
+This layer beats – or ‘trumps’ – all other layers, and has the power to override anything at all that has gone before it. It is inelegant and heavyhanded, and contains utility and helper classes, hacks and overrides. A lot of the declarations in this layer will carry `!important` (e.g. `.text-center { text-align: centre !important; }` ). This is the highest specificity layer – it includes the most explicit types of rule, with the most narrow focus. This layer forms the point of the Triangle.
+So instead of grouping things into ‘typographic styles’ , or ‘form styles’ , we are breaking them into groups based around specificity, reach and explicitness. This format allows us to write our CSS in an order that only ever adds to and inherits from what came previously. We spend very little time undoing things, because our cascade and specificity are all pointing in the same direction. We drastically reduce the amount of collisions, leaks and redefinitions.
 
-Overrides, helpers, utilities.
-Only affect one piece of the
-DOM at a time.
-Usually carry !important.
-
-Example:
-.one-half {
-	width: 50% !important;
-}
+[Source](http://technotif.com/manage-large-css-projects-with-itcss/)
